@@ -124,26 +124,24 @@ function Signup() {
   if (!isAuthenticated) {
     return (
       <Container maxW="container.lg" p={50}>
-        <Center>
-          <Heading as="h2" size="3xl" p={10}>
-            Email Auth Demo
-          </Heading>
-        </Center>
 
         <Center>
           <Input
+            type="email"
             value={email}
             onChange={handleEmailChange}
             placeholder="Email"
             size="sm"
           />
           <Input
+            type="password"
             value={password}
             onChange={handlePasswordChange}
             placeholder="password"
             size="sm"
           />
           <Input
+            type="text"
             value={username}
             onChange={handleUsernameChange}
             placeholder="username"
